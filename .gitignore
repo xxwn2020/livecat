@@ -1,2 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+docker/data/mysql/data
+docker/data/php
