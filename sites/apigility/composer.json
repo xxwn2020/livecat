@@ -23,6 +23,14 @@
         "branch-alias": {
             "dev-master": "1.4-dev",
             "dev-develop": "1.5-dev"
+        },
+        "merge-plugin": {
+            "include": [
+                "module/ApigilityLogic/*/composer.json"
+            ],
+            "recurse": false,
+            "replace": false,
+            "merge-extra": false
         }
     },
     "require": {
@@ -30,7 +38,8 @@
         "zendframework/zend-component-installer": "^1.0 || ^0.5 || ^1.0.0-dev@dev",
         "zfcampus/zf-apigility": "^1.3",
         "zfcampus/zf-apigility-documentation": "^1.2.3",
-        "zfcampus/zf-development-mode": "^3.0"
+        "zfcampus/zf-development-mode": "^3.0",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1",
