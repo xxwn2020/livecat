@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  mysql:
+    build: ./docker/build/mysql
+    ports:
+      - "3388:3306"
+    volumes:
+      - "./docker/data/mysql/data:/var/lib/mysql"
+      - "./docker/data/mysql/conf:/etc/mysql/conf.d"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: abc123
+
+  apigility:
+    depends_on:
+      - mysql
+    build: ./docker/build/apigility
+    ports:
+      - "8001:80"
+    volumes:
+      - "./sites/apigility:/app"
+      - "./data/php/session/apigility:/var/lib/php/session"
+    restart: always
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+      XDEBUG_REMOTE_CONNECT_BACK: 0
+      XDEBUG_REMOTE_HOST: 192.168.1.88
