@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2aac165ac736bfd879fbfdfb6f675df",
+    "content-hash": "0234be89678a2c67e3c2555f2abe0ef9",
     "packages": [
         {
             "name": "api-skeletons/zf-doctrine-module-zend-hydrator",

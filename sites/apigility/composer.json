@@ -30,7 +30,8 @@
             ],
             "recurse": false,
             "replace": false,
-            "merge-extra": false
+            "merge-extra": false,
+            "merge-scripts": true
         }
     },
     "require": {
@@ -73,11 +74,7 @@
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",
         "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
-        "test": "phpunit",
-        "doctrine-create-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:create",
-        "doctrine-update-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:update --force",
-        "doctrine-drop-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:drop --force",
-        "doctrine-init-db" : "php init-db.php"
+        "test": "phpunit"
     },
     "repositories": {
         "packagist": {

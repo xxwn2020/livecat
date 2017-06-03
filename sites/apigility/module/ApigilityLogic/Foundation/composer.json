@@ -28,5 +28,11 @@
         "psr-4": {
             "ApigilityLogic\\Foundation\\": "src/"
         }
+    },
+    "scripts": {
+        "doctrine-create-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:create",
+        "doctrine-update-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:update --force",
+        "doctrine-drop-db" : "php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:drop --force",
+        "doctrine-init-db" : "php init-db.php"
     }
 }
