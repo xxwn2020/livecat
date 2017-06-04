@@ -2,3 +2,4 @@
 .idea
 docker/data/mysql/data
 docker/data/php
+.DS_Store
