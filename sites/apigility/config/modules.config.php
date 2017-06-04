@@ -37,5 +37,5 @@ return [
     'Application',
     'ApigilityLogic\\Foundation',
     'ApigilityLogic\\User',
-    'ApigilityLogicAddress',
+    'ApigilityLogic\\Address',
 ];

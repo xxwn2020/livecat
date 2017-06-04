@@ -17,6 +17,15 @@ echo 'init data ...'.PHP_EOL;
 // 初始化需要的服务
 $sm = $application->getServiceManager();
 
+/**
+ * @return ApigilityLogic\Address\Service\RegionService
+ */
+function getRegionService () {
+    global $sm;
+    return $sm->get('ApigilityLogic\Address\Service\RegionService');
+}
+
+getRegionService()->initBaseRegionData();
 
 $entityManager->flush();
 
