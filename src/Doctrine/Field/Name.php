@@ -6,11 +6,17 @@
  * Time: 18:09:35
  */
 
-namespace ApigilityLogic\Foundation\Doctrine\GetterSetter;
+namespace ApigilityLogic\Foundation\Doctrine\Field;
 
+use Doctrine\ORM\Mapping\Column;
 
 trait Name
 {
+    /**
+     * @Column(type="string", length=50, nullable=true)
+     */
+    protected $name;
+
     public function setName($name)
     {
         $this->name = $name;

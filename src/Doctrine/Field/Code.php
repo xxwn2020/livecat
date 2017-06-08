@@ -6,11 +6,17 @@
  * Time: 19:44:14
  */
 
-namespace ApigilityLogic\Foundation\Doctrine\GetterSetter;
+namespace ApigilityLogic\Foundation\Doctrine\Field;
 
+use Doctrine\ORM\Mapping\Column;
 
 trait Code
 {
+    /**
+     * @Column(type="string", length=50, nullable=false)
+     */
+    protected $code;
+
     public function setCode($code)
     {
         $this->code = $code;
