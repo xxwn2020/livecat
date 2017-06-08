@@ -6,11 +6,19 @@
  * Time: 18:07:06
  */
 
-namespace ApigilityLogic\Foundation\Doctrine\GetterSetter;
+namespace ApigilityLogic\Foundation\Doctrine\Field;
 
+use Doctrine\ORM\Mapping\Column;
 
 trait CreateTime
 {
+    /**
+     * 创建时间
+     *
+     * @Column(type="datetime", nullable=true)
+     */
+    protected $create_time;
+
     public function setCreateTime($create_time)
     {
         $this->create_time = $create_time;
