@@ -7,10 +7,10 @@ url: "http://livecat.cn"
 
 
 # Secondary Parameters
-baseurl: "/livecat"
-header-img: img/home-bg.jpg
+baseurl: ""
+header-img: /img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /livecatimg/logos/Project-Pages-New-Logo-Inverted.png
+logo: /img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  live-cat
