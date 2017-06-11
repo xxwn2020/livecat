@@ -8,7 +8,7 @@ url: "http://livecat.cn"
 
 # Secondary Parameters
 baseurl: ""
-header-img: /img/home-bg.jpg
+header-img: http://livecat.cn/img/home-bg.jpg
 headercolor: "#FFFFFF"
 logo: /img/logos/Project-Pages-New-Logo-Inverted.png
 
