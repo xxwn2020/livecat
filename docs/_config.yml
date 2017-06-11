@@ -7,10 +7,10 @@ url: "http://livecat.cn"
 
 
 # Secondary Parameters
-baseurl: "http://livecat.cn"
-header-img: /img/home-bg.jpg
+baseurl: "http://livecat.cn/"
+header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /img/logos/Project-Pages-New-Logo-Inverted.png
+logo: img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  live-cat
@@ -36,7 +36,7 @@ defaults:
       type: "pages"
     values:
       layout: "project"
-      header-img: "/img/home-bg.jpg"
+      header-img: "img/home-bg.jpg"
 
 # Prose Settings
 prose:
