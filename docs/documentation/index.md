@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Project 1"
-description: "Description of Project #1"
+title: "LiveCat"
+description: "娱乐直播系统"
 header-img: "img/home-bg.jpg"
 category: default
 ---
