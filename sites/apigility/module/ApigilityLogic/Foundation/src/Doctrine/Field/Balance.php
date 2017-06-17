@@ -2,31 +2,31 @@
 /**
  * Created by PhpStorm.
  * User: figo-007
- * Date: 2017/6/8
- * Time: 19:28:35
+ * Date: 2017/6/9
+ * Time: 20:44:41
  */
 
 namespace ApigilityLogic\Foundation\Doctrine\Field;
 
 use Doctrine\ORM\Mapping\Column;
 
-trait Amount
+trait Balance
 {
     /**
-     * 交易事件的发生额
+     * 余额
      *
      * @Column(type="decimal", precision=13, scale=2, nullable=false)
      */
-    protected $amount;
+    protected $balance;
 
-    public function setAmount($amount)
+    public function setBalance($balance)
     {
-        $this->amount = $amount;
+        $this->balance = $balance;
         return $this;
     }
 
-    public function getAmount()
+    public function getBalance()
     {
-        return $this->amount;
+        return $this->balance;
     }
 }
