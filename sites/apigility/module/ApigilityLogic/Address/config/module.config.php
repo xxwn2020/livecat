@@ -120,6 +120,8 @@ return [
                         ],
                     ],
                 ],
+                'description' => '地区代码',
+                'field_type' => 'string',
             ],
             1 => [
                 'name' => 'name',
@@ -168,6 +170,26 @@ return [
                 'required' => false,
                 'filters' => [],
                 'validators' => [],
+            ],
+        ],
+    ],
+    'zf-mvc-auth' => [
+        'authorization' => [
+            'ApigilityLogic\\Address\\V1\\Rest\\Region\\Controller' => [
+                'collection' => [
+                    'GET' => false,
+                    'POST' => true,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
             ],
         ],
     ],

@@ -9,13 +9,10 @@ namespace ApigilityLogic\User\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\Table;
-use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\Column;
-use Doctrine\ORM\Mapping\OneToOne;
 use Doctrine\ORM\Mapping\OneToMany;
-use Doctrine\ORM\Mapping\JoinColumn;
-use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\Common\Collections\ArrayCollection;
+use ApigilityLogic\Foundation\Doctrine\Field;
 
 /**
  * Class IncomeLevel
@@ -24,11 +21,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class IncomeLevel
 {
-    /**
-     * @Id @Column(type="integer")
-     * @GeneratedValue
-     */
-    protected $id;
+    use Field\Id;
 
     /**
      * 最小收入
@@ -54,17 +47,6 @@ class IncomeLevel
     public function __construct()
     {
         $this->users = new ArrayCollection();
-    }
-
-    public function setId($id)
-    {
-        $this->id = $id;
-        return $this;
-    }
-
-    public function getId()
-    {
-        return $this->id;
     }
 
     public function setMinIncome($min_income)
